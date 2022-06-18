@@ -1,22 +1,8 @@
 # ninja log v5
-29	3053	6772496363191333	CMakeFiles/cplusProject.dir/main.cpp.obj	1c7483b38ef67de4
-3282	3493	6772501308284021	cplusProject.exe	b26ca6fe2dac9326
-9	3281	6772501306205094	CMakeFiles/cplusProject.dir/tests.cpp.obj	5f1ac0d4cdba7cd
-7	3063	6772496363300316	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	2769595db68252ab
-6	432	6772523989907917	build.ninja	603d896a8f3b7598
-10	212	6772523993426660	CMakeFiles/cplusProject.dir/tests.cpp.obj	279acd9a411ee98e
-15	2579	6772524017107033	CMakeFiles/cplusProject.dir/main.cpp.obj	305a8b95aa2f859b
-20	2639	6772524017749348	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
-2639	2860	6772524019946945	cplusProject.exe	b26ca6fe2dac9326
-9	3108	6772525129280995	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
-3110	3327	6772525131473659	cplusProject.exe	b26ca6fe2dac9326
-6	3466	6772526586109405	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
-3467	3679	6772526588203606	cplusProject.exe	b26ca6fe2dac9326
-6	181	6772532992671726	CMakeFiles/cplusProject.dir/tests.cpp.obj	279acd9a411ee98e
 30	3421	6772533025095678	CMakeFiles/cplusProject.dir/main.cpp.obj	305a8b95aa2f859b
-36	3508	6772533025960332	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
-3509	3749	6772533028305829	cplusProject.exe	b26ca6fe2dac9326
-7	3007	6772533933368598	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
-3008	3212	6772533935503648	cplusProject.exe	b26ca6fe2dac9326
-7	3455	6772534472039737	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
 3455	3668	6772534474170729	cplusProject.exe	b26ca6fe2dac9326
+6	432	6772538284237950	build.ninja	603d896a8f3b7598
+6	181	6772532992671726	CMakeFiles/cplusProject.dir/tests.cpp.obj	279acd9a411ee98e
+7	3455	6772534472039737	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
+1	356	6772538284237950	build.ninja	603d896a8f3b7598
+9	2268	6772538308084056	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
