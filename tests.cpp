@@ -9,8 +9,8 @@ REQUIRE(collision(65, 3, 11) == 1);
 }
 
 TEST_CASE("The bird up") {
-REQUIRE(pressSpase(6) == 3);
-REQUIRE(pressSpase(2) == 2);
+REQUIRE(pressSpace(6) == 3);
+REQUIRE(pressSpace(2) == 2);
 }
 
 TEST_CASE("The bird down") {

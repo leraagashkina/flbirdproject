@@ -3,7 +3,7 @@ project(cplusProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(cplusProject main.cpp tests.cpp cmake-build-debug/flappybird.cpp flappybird.h)
+add_executable(cplusProject main.cpp flappybird.cpp)
 
 enable_testing()
 add_subdirectory(external/doctest)
