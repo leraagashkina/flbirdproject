@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/ÂØÝ/cplusProject/cmake-build-debug/
+cmake_ninja_workdir = D$:/HSE/cplusProject/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target cplusProject
 
@@ -49,14 +49,20 @@ cmake_ninja_workdir = D$:/ÂØÝ/cplusProject/cmake-build-debug/
 
 build cmake_object_order_depends_target_cplusProject: phony || CMakeFiles/cplusProject.dir
 
-build CMakeFiles/cplusProject.dir/main.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/ÂØÝ/cplusProject/main.cpp || cmake_object_order_depends_target_cplusProject
+build CMakeFiles/cplusProject.dir/main.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/HSE/cplusProject/main.cpp || cmake_object_order_depends_target_cplusProject
   DEP_FILE = CMakeFiles\cplusProject.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
   OBJECT_DIR = CMakeFiles\cplusProject.dir
   OBJECT_FILE_DIR = CMakeFiles\cplusProject.dir
 
-build CMakeFiles/cplusProject.dir/tests.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/ÂØÝ/cplusProject/tests.cpp || cmake_object_order_depends_target_cplusProject
+build CMakeFiles/cplusProject.dir/tests.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/HSE/cplusProject/tests.cpp || cmake_object_order_depends_target_cplusProject
   DEP_FILE = CMakeFiles\cplusProject.dir\tests.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\cplusProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\cplusProject.dir
+
+build CMakeFiles/cplusProject.dir/flappybird.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/HSE/cplusProject/cmake-build-debug/flappybird.cpp || cmake_object_order_depends_target_cplusProject
+  DEP_FILE = CMakeFiles\cplusProject.dir\flappybird.cpp.obj.d
   FLAGS = -g -std=gnu++17
   OBJECT_DIR = CMakeFiles\cplusProject.dir
   OBJECT_FILE_DIR = CMakeFiles\cplusProject.dir
@@ -69,7 +75,7 @@ build CMakeFiles/cplusProject.dir/tests.cpp.obj: CXX_COMPILER__cplusProject_Debu
 #############################################
 # Link the executable cplusProject.exe
 
-build cplusProject.exe: CXX_EXECUTABLE_LINKER__cplusProject_Debug CMakeFiles/cplusProject.dir/main.cpp.obj CMakeFiles/cplusProject.dir/tests.cpp.obj
+build cplusProject.exe: CXX_EXECUTABLE_LINKER__cplusProject_Debug CMakeFiles/cplusProject.dir/main.cpp.obj CMakeFiles/cplusProject.dir/tests.cpp.obj CMakeFiles/cplusProject.dir/flappybird.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cplusProject.dir
@@ -79,33 +85,164 @@ build cplusProject.exe: CXX_EXECUTABLE_LINKER__cplusProject_Debug CMakeFiles/cpl
   TARGET_IMPLIB = libcplusProject.dll.a
   TARGET_PDB = cplusProject.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target flBird_test
+
 
 #############################################
-# Utility command for edit_cache
+# Order-only phony target for flBird_test
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\ÂØÝ\cplusProject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
+build cmake_object_order_depends_target_flBird_test: phony || cmake_object_order_depends_target_doctest
 
-build edit_cache: phony CMakeFiles/edit_cache.util
+build CMakeFiles/flBird_test.dir/flappybird.cpp.obj: CXX_COMPILER__flBird_test_Debug D$:/HSE/cplusProject/cmake-build-debug/flappybird.cpp || cmake_object_order_depends_target_flBird_test
+  DEP_FILE = CMakeFiles\flBird_test.dir\flappybird.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -ID:/HSE/cplusProject/external/doctest
+  OBJECT_DIR = CMakeFiles\flBird_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\flBird_test.dir
+
+build CMakeFiles/flBird_test.dir/tests.cpp.obj: CXX_COMPILER__flBird_test_Debug D$:/HSE/cplusProject/tests.cpp || cmake_object_order_depends_target_flBird_test
+  DEP_FILE = CMakeFiles\flBird_test.dir\tests.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -ID:/HSE/cplusProject/external/doctest
+  OBJECT_DIR = CMakeFiles\flBird_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\flBird_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target flBird_test
+
+
+#############################################
+# Link the executable flBird_test.exe
+
+build flBird_test.exe: CXX_EXECUTABLE_LINKER__flBird_test_Debug CMakeFiles/flBird_test.dir/flappybird.cpp.obj CMakeFiles/flBird_test.dir/tests.cpp.obj | external/doctest/libdoctest.a || external/doctest/libdoctest.a
+  FLAGS = -g
+  LINK_LIBRARIES = external/doctest/libdoctest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\flBird_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = flBird_test.exe
+  TARGET_IMPLIB = libflBird_test.dll.a
+  TARGET_PDB = flBird_test.exe.dbg
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\ÂØÝ\cplusProject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\ÂØÝ\cplusProject -BD:\ÂØÝ\cplusProject\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\HSE\cplusProject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\HSE\cplusProject -BD:\HSE\cplusProject\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\HSE\cplusProject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\HSE\cplusProject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/HSE/cplusProject/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build external/doctest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\HSE\cplusProject\cmake-build-debug\external\doctest && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\HSE\cplusProject -BD:\HSE\cplusProject\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build external/doctest/rebuild_cache: phony external/doctest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for test
+
+build external/doctest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\HSE\cplusProject\cmake-build-debug\external\doctest && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build external/doctest/test: phony external/doctest/CMakeFiles/test.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target doctest
+
+
+#############################################
+# Order-only phony target for doctest
+
+build cmake_object_order_depends_target_doctest: phony || external/doctest/CMakeFiles/doctest.dir
+
+build external/doctest/CMakeFiles/doctest.dir/doctest.cpp.obj: CXX_COMPILER__doctest_Debug D$:/HSE/cplusProject/external/doctest/doctest.cpp || cmake_object_order_depends_target_doctest
+  DEP_FILE = external\doctest\CMakeFiles\doctest.dir\doctest.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -ID:/HSE/cplusProject/external/doctest
+  OBJECT_DIR = external\doctest\CMakeFiles\doctest.dir
+  OBJECT_FILE_DIR = external\doctest\CMakeFiles\doctest.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target doctest
+
+
+#############################################
+# Link the static library external\doctest\libdoctest.a
+
+build external/doctest/libdoctest.a: CXX_STATIC_LIBRARY_LINKER__doctest_Debug external/doctest/CMakeFiles/doctest.dir/doctest.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = external\doctest\CMakeFiles\doctest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = external\doctest\libdoctest.a
+  TARGET_PDB = doctest.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build external/doctest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\HSE\cplusProject\cmake-build-debug\external\doctest && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build external/doctest/edit_cache: phony external/doctest/CMakeFiles/edit_cache.util
+
 # =============================================================================
 # Target aliases.
 
 build cplusProject: phony cplusProject.exe
+
+build doctest: phony external/doctest/libdoctest.a
+
+build flBird_test: phony flBird_test.exe
+
+build libdoctest.a: phony external/doctest/libdoctest.a
 
 # =============================================================================
 # Folder targets.
@@ -113,9 +250,16 @@ build cplusProject: phony cplusProject.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/ÂØÝ/cplusProject/cmake-build-debug
+# Folder: D:/HSE/cplusProject/cmake-build-debug
 
-build all: phony cplusProject.exe
+build all: phony cplusProject.exe flBird_test.exe external/doctest/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/HSE/cplusProject/cmake-build-debug/external/doctest
+
+build external/doctest/all: phony external/doctest/libdoctest.a
 
 # =============================================================================
 # Built-in targets
@@ -124,14 +268,14 @@ build all: phony cplusProject.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../external/doctest/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../external/doctest/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3.4/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################

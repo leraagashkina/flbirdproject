@@ -1,3 +1,9 @@
-D:/ВШЭ/cplusProject/cmake-build-debug/CMakeFiles/cplusProject.dir
-D:/ВШЭ/cplusProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/ВШЭ/cplusProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/HSE/cplusProject/cmake-build-debug/CMakeFiles/cplusProject.dir
+D:/HSE/cplusProject/cmake-build-debug/CMakeFiles/flBird_test.dir
+D:/HSE/cplusProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/HSE/cplusProject/cmake-build-debug/CMakeFiles/test.dir
+D:/HSE/cplusProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/HSE/cplusProject/cmake-build-debug/external/doctest/CMakeFiles/rebuild_cache.dir
+D:/HSE/cplusProject/cmake-build-debug/external/doctest/CMakeFiles/test.dir
+D:/HSE/cplusProject/cmake-build-debug/external/doctest/CMakeFiles/doctest.dir
+D:/HSE/cplusProject/cmake-build-debug/external/doctest/CMakeFiles/edit_cache.dir
