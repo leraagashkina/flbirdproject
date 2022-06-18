@@ -1,8 +1,13 @@
 # ninja log v5
 30	3421	6772533025095678	CMakeFiles/cplusProject.dir/main.cpp.obj	305a8b95aa2f859b
 3455	3668	6772534474170729	cplusProject.exe	b26ca6fe2dac9326
-6	432	6772538284237950	build.ninja	603d896a8f3b7598
+1	356	6772542857130909	build.ninja	603d896a8f3b7598
 6	181	6772532992671726	CMakeFiles/cplusProject.dir/tests.cpp.obj	279acd9a411ee98e
-7	3455	6772534472039737	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
-1	356	6772538284237950	build.ninja	603d896a8f3b7598
 9	2268	6772538308084056	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	aa0269357a435741
+6	2533	6772543439511068	CMakeFiles/cplusProject.dir/flappybird.cpp.obj	ae91a230bd1903b9
+2533	2849	6772543442630295	cplusProject.exe	ad5cb35fe328be8f
+1	2843	6772543777791093	CMakeFiles/tests.dir/tests.cpp.obj	275b7e2f97a9e8ae
+19	2846	6772543777831082	CMakeFiles/tests.dir/flappybird.cpp.obj	660b0463fae8d792
+23	4879	6772543798108507	external/doctest/CMakeFiles/doctest.dir/doctest.cpp.obj	11eaa4b79a987971
+4881	5626	6772543805670839	external/doctest/libdoctest.a	34cb1da7e29a127c
+5626	6299	6772543812273312	tests.exe	94e17d22701c6369

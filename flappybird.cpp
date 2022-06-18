@@ -1,9 +1,7 @@
 #include <iostream>
 #include <conio.h>
-#include <dos.h>
 #include <stdlib.h>
 #include <windows.h>
-#include <time.h>
 
 #define  SCREEN_WIDTH 90 // ширина экрана
 #define SCREEN_HEIGHT 26 // высота экрана
@@ -25,7 +23,7 @@ int score = 0;
 
 /*!
 	Данная функция помещает курсор текстового экрана в точку с координатами х,у.
- @arg Координаты х и у.
+ @param x, y - координаты х и у.
 */
 void gotoxy(short int x, short int y) {
     CursorPosition.X = x;
@@ -72,7 +70,7 @@ void drawBorder() {
 
 /*!
 	Данная функция генерирует колонны. Она выдает координату начала пробела между колоннами по оси y.
- @arg Номер колонны.
+ @param Номер колонны.
 */
 void genPipe(int ind) {
     gapPos[ind] = 3 + rand() % 14;
@@ -80,7 +78,7 @@ void genPipe(int ind) {
 
 /*!
 	Данная функция отрисовывает колонны.
- @arg Номер колонны.
+ @param Номер колонны.
 */
 void drawPipe(int ind) {
     if (pipeFlag[ind] == true) {
@@ -97,7 +95,7 @@ void drawPipe(int ind) {
 
 /*!
 	Данная функция стирает колонну. Используется для перемещения.
-@arg Номер колонны.
+@param Номер колонны.
 */
 void erasePipe(int ind) {
     if (pipeFlag[ind] == true) {
@@ -138,22 +136,11 @@ void eraseBird() {
 
 /*!
 	Данная функция возвращает 1, если птичка врезалась в колонну, и 0, если все хорошо.
-
-int collision() {
-    if (pipePos[0] >= 61) {
-        if (birdPos < gapPos[0] || birdPos > gapPos[0] + GAP_SIZE) {
-            return 1;
-        }
-    }
-    return 0;
-}
-*/
-
-/*!
-	Данная функция возвращает 1, если птичка врезалась в колонну, и 0, если все хорошо.
-    int pP - позиция колонны
-    int gP - позиция пробела в колонне
-    int bP - позиция птички
+ @param pP - позиция колонны
+ @param gP - позиция пробела в колонне
+ @param bP - позиция птички
+ @return 1, если птичка врезалась в колонну
+ @return 0, если все хорошо.
 */
 int collision(int pP, int gP, int bP) {
     if (pP >= 61) {
@@ -222,7 +209,7 @@ void description() {
 
 /*!
 	Данная поднимает птичку вверх.
- @arg Начальная позиция птички
+ @param Начальная позиция птички
  @return Новая позиция птички
 */
 int pressSpace(int bP) {
@@ -245,11 +232,12 @@ int reaction() {
             return -1;
         }
     }
+    return -2;
 }
 
 /*!
 	Данная спускает птичку вниз.
- @arg Начальная позиция птички
+ @param Начальная позиция птички
  @return Новая позиция птички
 */
 int birdDown(int bP) {

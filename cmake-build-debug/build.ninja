@@ -55,13 +55,7 @@ build CMakeFiles/cplusProject.dir/main.cpp.obj: CXX_COMPILER__cplusProject_Debug
   OBJECT_DIR = CMakeFiles\cplusProject.dir
   OBJECT_FILE_DIR = CMakeFiles\cplusProject.dir
 
-build CMakeFiles/cplusProject.dir/tests.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/HSE/cplusProject/tests.cpp || cmake_object_order_depends_target_cplusProject
-  DEP_FILE = CMakeFiles\cplusProject.dir\tests.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles\cplusProject.dir
-  OBJECT_FILE_DIR = CMakeFiles\cplusProject.dir
-
-build CMakeFiles/cplusProject.dir/flappybird.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/HSE/cplusProject/cmake-build-debug/flappybird.cpp || cmake_object_order_depends_target_cplusProject
+build CMakeFiles/cplusProject.dir/flappybird.cpp.obj: CXX_COMPILER__cplusProject_Debug D$:/HSE/cplusProject/flappybird.cpp || cmake_object_order_depends_target_cplusProject
   DEP_FILE = CMakeFiles\cplusProject.dir\flappybird.cpp.obj.d
   FLAGS = -g -std=gnu++17
   OBJECT_DIR = CMakeFiles\cplusProject.dir
@@ -75,7 +69,7 @@ build CMakeFiles/cplusProject.dir/flappybird.cpp.obj: CXX_COMPILER__cplusProject
 #############################################
 # Link the executable cplusProject.exe
 
-build cplusProject.exe: CXX_EXECUTABLE_LINKER__cplusProject_Debug CMakeFiles/cplusProject.dir/main.cpp.obj CMakeFiles/cplusProject.dir/tests.cpp.obj CMakeFiles/cplusProject.dir/flappybird.cpp.obj
+build cplusProject.exe: CXX_EXECUTABLE_LINKER__cplusProject_Debug CMakeFiles/cplusProject.dir/main.cpp.obj CMakeFiles/cplusProject.dir/flappybird.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cplusProject.dir
@@ -94,7 +88,7 @@ build cplusProject.exe: CXX_EXECUTABLE_LINKER__cplusProject_Debug CMakeFiles/cpl
 
 build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_doctest
 
-build CMakeFiles/tests.dir/flappybird.cpp.obj: CXX_COMPILER__tests_Debug D$:/HSE/cplusProject/cmake-build-debug/flappybird.cpp || cmake_object_order_depends_target_tests
+build CMakeFiles/tests.dir/flappybird.cpp.obj: CXX_COMPILER__tests_Debug D$:/HSE/cplusProject/flappybird.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\flappybird.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -ID:/HSE/cplusProject/external/doctest
