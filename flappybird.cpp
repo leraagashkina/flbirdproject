@@ -33,6 +33,8 @@ void gotoxy(short int x, short int y) {
 
 /*!
 	Данная функция отрисовывает курсор.
+ @param visible видимость курсора
+ @param size размер курсора
 */
 void setcursor(bool visible, DWORD size) {
     if (size == 0)
